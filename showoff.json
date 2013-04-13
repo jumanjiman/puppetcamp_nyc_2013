@@ -1,0 +1,19 @@
+{
+  "name":        "Puppet patterns in a financial exchange",
+  "description": "How ISE uses Puppet to move changes from test to production",
+
+  "sections": [
+    "title.md",        /* preso title page */
+    "license.md",      /* copyright 2013 Paul Morgan */
+    "jumanjiman.md",   /* author bio */
+    "ise.md",          /* company bio */
+    "problem.md",          /* company bio */
+
+    "reinvent.md",     /* how do we fix it? */
+    "puppet.md",       /* puppet - the tool that luke built */
+    "patterns.md",     /* what did we do right? */
+    "next.md",         /* where do we go next? */
+
+    "questions.md"     /* final slide */
+  ]
+}

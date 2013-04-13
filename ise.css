@@ -1,0 +1,124 @@
+/* Reference to Fonts
+ ***********************/
+
+@font-face { font-family: "Gotham Rounded Book"; src: url('fonts/GothamRnd-Book.otf'); }
+@font-face { font-family: "Gotham Rounded Medium"; src: url('fonts/GothamRnd-Medium.otf'); }
+
+/* Angryfruitsalad!  */
+@import "sh_emacs.css";
+
+/* https://github.com/samcollins/css-social-buttons */
+@import "zocial.css";
+
+/* Basic Elements */
+
+body {
+  background: url('images/slide_bg.png') #dcf9ff repeat-x 0 0;
+
+  /*
+  background-image: -webkit-gradient(
+    radial,
+    50% 50%, 0,
+    50% 50%, 1000,
+    from(rgba(245,245,245,1)),
+    to(rgba(100,100,100,1))
+  );
+  */
+
+  font: .8em "Gotham Rounded Book", arial, helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#preso, .slide {
+  /*background-image: url('ise/ise-wide.png');*/
+  background-image: url('ise/logo_ISE.png');
+  /*background-image: url('ise/ise-small.jpg');*/
+  background-position-x: 10px;
+  /*background-position-y: 650px;*/
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  clear: both;
+}
+
+.slide .center {
+  /*vertical-align: top;*/
+}
+
+h1 {
+  letter-spacing: -3px;
+  color: #4286ba;
+  -webkit-margin-before: 0.1em;
+  -webkit-margin-after: 0.1em;
+}
+
+h2 {
+    font: 500 1.5em/2em "Gotham Rounded Medium";
+    /*color: #5d9b3e;*/
+    color: #f36b3b;
+/* border-bottom: 1px solid #b2d7e1; */
+}
+
+.content {
+  color: #606a6d;
+  margin-top: -150px;
+}
+
+.subsection h1 {
+    font-family: "Gotham Rounded Medium";
+    /*background: white;*/
+    /*color: #5d9b3e;*/
+    color:#f36b3b;
+    border-top: 1px solid #b2d7e1;
+    border-bottom: 1px solid #b2d7e1;
+}
+
+.bullets > ul > li {
+  letter-spacing: -1px;
+  color: #f36b3b;
+  padding: 5px;
+}
+
+#footer {
+  /*
+  background: #f36b3b;
+  height: 168px;
+  top: -168px;
+  background-image: url('ise/ise-wide.jpg');
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  clear: both;
+  */
+  background: rgba(221,221,221,0.15);
+}
+
+/*.fixed-top {*/
+#top {
+  margin-top: 50px !important;
+}
+
+/* Code font*/
+/* #preso code, */
+/* #preso pre { */
+/*     font-family: Consolas, */
+/*              "Andale Mono", */
+/*              "Lucida Console", */
+/*              "Lucida Sans Typewriter", */
+/*              "DejaVu Sans Mono", */
+/*              "Bitstream Vera Sans Mono", */
+/*              "Liberation Mono", */
+/*              "Nimbus Mono L", */
+/*              Monaco, */
+/*              "Courier New", */
+/*              Courier, */
+/*              monospace; */
+/*     color: #000; */
+/*     padding: 0.5em; */
+/*     font-size: 18px; */
+/*     background-color: transparent; */
+/* } */
+/* #preso code { */
+/*     display: block; */
+/*     border: 1px dashed #65aaba; */
+/*     background-color: #eee; */
+/* } */

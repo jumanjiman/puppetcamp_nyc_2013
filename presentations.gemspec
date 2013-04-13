@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Paul Morgan"]
   s.email       = ["jumanjiman@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Presentations with showoff}
+  s.description = %q{Markdown source to be transformed via the showoff gem}
 
   s.rubyforge_project = "presentations"
 
@@ -18,3 +18,4 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 end
+# vim: set ts=2 sw=2 ai et ruler:
