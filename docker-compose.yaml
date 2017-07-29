@@ -9,6 +9,7 @@ services:
         - BUILD_DATE
         - VCS_REF
         - VERSION
+        - CI_BUILD_URL=${CIRCLE_BUILD_URL}
     read_only: true
     cap_drop:
       - all

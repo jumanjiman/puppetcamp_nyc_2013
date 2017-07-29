@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+set -u
+
+. ci/vars
+docker login -u ${user} -p ${pass}
+docker-compose push
+docker logout

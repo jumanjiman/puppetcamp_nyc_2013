@@ -31,11 +31,13 @@ USER app_user
 ENTRYPOINT ["/usr/lib/ruby/gems/2.4.0/bundler/gems/showoff-b04ae5b934ac/bin/showoff"]
 CMD ["serve"]
 
+ARG CI_BUILD_URL
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
 LABEL \
+    io.github.jumanjiman.ci-build-url=${CI_BUILD_URL} \
     io.github.jumanjiman.version=${VERSION} \
     io.github.jumanjiman.build-date=${BUILD_DATE} \
     io.github.jumanjiman.vcs-ref=${VCS_REF} \
