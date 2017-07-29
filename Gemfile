@@ -1,8 +1,5 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in presentations.gemspec
-gemspec
-
 # Do not append to this file until you read
 # http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
 

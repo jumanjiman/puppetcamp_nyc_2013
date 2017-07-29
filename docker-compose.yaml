@@ -1,0 +1,26 @@
+version: '2.1'
+
+services:
+  preso: &defaults
+    image: jumanjiman/puppetcamp_nyc_2013
+    build:
+      context: .
+      args:
+        - BUILD_DATE
+        - VCS_REF
+        - VERSION
+    read_only: true
+    cap_drop:
+      - all
+    pids_limit: 30
+    cpu_shares: 1023
+    mem_limit: 128M
+    shm_size: 32M
+    stdin_open: false
+    tty: false
+    ports:
+      - 9090:9090/tcp
+
+  tagged_preso:
+    <<: *defaults
+    image: jumanjiman/puppetcamp_nyc_2013:${TAG}
