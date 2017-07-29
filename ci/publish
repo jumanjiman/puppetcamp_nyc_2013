@@ -6,3 +6,5 @@ set -u
 docker login -u ${user} -p ${pass}
 docker-compose push
 docker logout
+
+curl -X POST 'https://hooks.microbadger.com/images/jumanjiman/puppetcamp_nyc_2013/8nO7YPpw2Iz6SohosW0rjr-LkM0='
